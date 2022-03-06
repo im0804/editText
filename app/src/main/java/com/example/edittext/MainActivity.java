@@ -106,9 +106,9 @@ public class MainActivity extends AppCompatActivity {
             else {
                 ivr.setImageResource(R.drawable.ximage);
             }
+            avg = counter*(1/3.0)*100;
+            Toast.makeText(this, counter+"/3"+" "+ avg+"%", Toast.LENGTH_LONG).show();
         }
-        avg = counter*(1/3.0)*100;
-        Toast.makeText(this, counter+"/3"+" "+ avg+"%", Toast.LENGTH_LONG).show();
     }
 
     public void reset(View view) {
